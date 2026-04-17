@@ -5,21 +5,21 @@ class Shellyctl < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/pawelchcki/shelly-rpc/releases/download/v0.1.0/shellyctl-aarch64-apple-darwin.tar.xz"
-      sha256 "79eb4ef2bfb683e55a548b0d364fdf5178e1ef7931eec9f91449efd4a107ae36"
+      sha256 "023099139084484e506b455b3fb04fc4c7895d1e1917acae0d9bd297fe4f6da4"
     end
     if Hardware::CPU.intel?
       url "https://github.com/pawelchcki/shelly-rpc/releases/download/v0.1.0/shellyctl-x86_64-apple-darwin.tar.xz"
-      sha256 "20db185f0fb2f1ce1dc5842f7fc1f45b7d3ecfac8790edd26e1881e1ee4ba0e1"
+      sha256 "f69c1c4dc8191d7cbe590fc53000d09d82496e490cebc4968d7241617d225a88"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/pawelchcki/shelly-rpc/releases/download/v0.1.0/shellyctl-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "4f649653e1b3adaa95eb66f8ee2cf06c7122d6d89b669c255a55cdd65a03350e"
+      sha256 "e23cde49c76e2a976307f91d050230d90f67cfe01235355a357b1b4b051c9d40"
     end
     if Hardware::CPU.intel?
       url "https://github.com/pawelchcki/shelly-rpc/releases/download/v0.1.0/shellyctl-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "41be6387f32ad7dbce5d1b9e0608de07b0c26d5cf371ea65f4f51c7f726a5067"
+      sha256 "55b470a9ba8b67d194f856879ae952d930fe53e246f92adbf6ba25b2c54cfe24"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
